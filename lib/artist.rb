@@ -3,4 +3,10 @@ attr_accessor :name
   
 @@all = []
 
-  initialize 
+  def initialize(name)
+    @name = name
+  
+  end
+  
+  
+end 
