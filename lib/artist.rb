@@ -12,6 +12,7 @@ attr_accessor :name
     @@all
   end
   
-  def 
+  def new_song
+    
 
 end 
