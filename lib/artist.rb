@@ -26,6 +26,5 @@ attr_accessor :name
     songs.collect{|song| song.genre}
     # Potentially need .uniq here?
   end
-    
 
 end 
