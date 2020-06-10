@@ -13,6 +13,7 @@ class Genre
   
   def songs
     Song.all.select{|song| song.genre == self}
+    # Potentially need .uniq here?
   end
   
   def artists
