@@ -21,6 +21,11 @@ attr_accessor :name
   def songs
     Song.all.select{|song| song.artist == self}
   end
+  
+  def genres
+    Genre.all.select{|song| song.artist == self}
+    # Potentially need .uniq here?
+  end
     
 
 end 
