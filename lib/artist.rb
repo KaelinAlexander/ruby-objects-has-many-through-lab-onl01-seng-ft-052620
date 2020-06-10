@@ -12,8 +12,8 @@ attr_accessor :name
     @@all
   end
   
-  def new_song(song, genre)
-    song = Song.new(song, genre)
+  def new_song(name, genre)
+    song = Song.new
     song.artist = self
     song.genre = genre
   end
