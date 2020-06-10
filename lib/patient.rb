@@ -1,4 +1,5 @@
 class Patient
+attr_accessor :appointment, :doctor
 
 @@all = []
 
@@ -10,5 +11,8 @@ class Patient
     appointment = Appointment.new(date, doctor)
     appointment.patient = self
   end
+  
+  def appointments
+    Appointment.all.select{|appointment| appointment.patient = self}
   
 end
