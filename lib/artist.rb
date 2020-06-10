@@ -23,7 +23,7 @@ attr_accessor :name
   end
   
   def genres
-    Song.all.collect{|song| song.genre}
+    Song.all.collect{|song| song.genre}.uniq
     # Potentially need .uniq here?
   end
     
