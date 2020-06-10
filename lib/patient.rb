@@ -17,7 +17,7 @@ attr_accessor :name, :appointment, :doctor
   end
   
   def appointments
-    Appointment.all.select{|appointment| appointment.patient = self}.uniq
+    Appointment.all.select{|appointment| appointment.patient = self}
   end
   
   def doctors
