@@ -13,7 +13,7 @@ attr_accessor :name
   end
   
   def new_song(name, genre)
-    song = Song.new(name, self,)
+    song = Song.new(name, self, genre)
   end
   
   def songs
